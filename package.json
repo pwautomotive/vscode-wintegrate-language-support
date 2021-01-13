@@ -1,0 +1,25 @@
+{
+    "name": "wintegrate-language-support",
+    "displayName": "wintegrate-language-support",
+    "description": "Add wIntegrate Script language support to vs-code.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "wis",
+            "aliases": ["wIntegrate Script", "wis"],
+            "extensions": [".wis"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "wis",
+            "scopeName": "source.wis",
+            "path": "./syntaxes/wis.tmLanguage.json"
+        }]
+    }
+}
